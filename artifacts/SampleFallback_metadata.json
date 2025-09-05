@@ -6,8 +6,12 @@
 	"output": {
 		"abi": [
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [],
-				"name": "myString",
+				"name": "lastFunctionCalled",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -19,17 +23,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "lastValueSent",
+				"outputs": [
 					{
-						"internalType": "string",
-						"name": "_newString",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "updateString",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -45,7 +53,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SampleContract.sol": "SampleContract"
+			"contracts/SampleFallback.sol": "SampleFallback"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -59,12 +67,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SampleContract.sol": {
-			"keccak256": "0xa7a34eef402a6b6f472864d6ccb722830edc08d146dc645362db6df81fa6f295",
+		"contracts/SampleFallback.sol": {
+			"keccak256": "0xc81cedc1b7ea1ec9ac4588e29a5d221265d1adcf90568d787b1a77a989e92d4e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8cdda8962335dfb4a121c16f5129b9b5829aa33cac250e70c6a6065503afcb10",
-				"dweb:/ipfs/QmShYUNktDWw53qVfUgbaG3obzhWaZFaxt4vdwJbbjk7nr"
+				"bzz-raw://d27a1b283dc893a4aa6234e8b7b028bfbd97ab2236b62fef119a8a6d48407339",
+				"dweb:/ipfs/QmexNJ3CePKGtqKsufCGaC5ivk49LsxNYxHqp7W4S51WNf"
 			]
 		}
 	},
